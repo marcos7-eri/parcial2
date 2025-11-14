@@ -37,8 +37,6 @@ namespace examenweb2parcial.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
-
-        // 4 - Eliminar tarea
         [HttpDelete("{id}")]
         public async Task<ActionResult> EliminarTarea(int id)
         {
